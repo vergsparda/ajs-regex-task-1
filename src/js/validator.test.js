@@ -34,8 +34,8 @@ test('start and end with letter', () => {
   expect(Validator.validUsername(name)).toEqual(expected);
 });
 
-test('not three numbers in a row', () => {
-  const name = 'u333u';
+test('not four numbers in a row', () => {
+  const name = 'u3333u';
   const expected = false;
 
   expect(Validator.validUsername(name)).toEqual(expected);
